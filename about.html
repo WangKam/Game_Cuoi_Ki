@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="about-style.css" />
+    <link href='./Images/witcher_icon.png' rel='icon' type='image/x-icon' />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation Bar-->
+      <div class="container" id="navbar" style="background-color: white">
+        <div class="header-left">
+          <a href="/" class="header-logo-a">
+            <img src="Images/witcher_manticore_icon.png" alt="" />
+          </a>
+        </div>
+        <div class="header-right">
+          <ul class="header-right-list"></ul>
+          <div class="header-right-button">
+            <button class="bg-white">ABOUT US</button>
+            <button class="bg-black">
+              <a
+                href="#main-game"
+                class="bg-black-text"
+                onclick="location.href='index.html'"
+                type="button"
+                >MAIN GAME</a
+              >
+            </button>
+            <!--<button class="bg-black" onclick="window.location.reload();">RESET</button>-->
+          </div>
+        </div>
+      </div>
+      <!-- -->
+      <!-- Content header-->
+      <!---->
+
+      <div style="width: 100%;height: 800px;display: grid;grid-template-columns: 50% 50%;">
+
+        <div style="height: 100%;padding-left: 350px;"><div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+          <div class="card p-4">
+            <div
+              class="image d-flex flex-column justify-content-center align-items-center"
+            >
+              <button class="btn btn-secondary">
+                <img
+                  src="nghia.jpg"
+                  height="100"
+                  width="100"
+                />
+              </button>
+              <span class="name mt-3">Nguyen Thai Chi Nghia</span>
+              <span class="idd">MSSV: 22560014</span>
+              <div
+                class="d-flex flex-row justify-content-center align-items-center gap-2"
+              >
+                <span class="idd1">nghia.nguyenthaichi2004@gmail.com</span>
+                <span><i class="fa fa-copy" onclick="copyNghia('nghia.nguyenthaichi2004@gmail.com')"></i></span>
+              </div>
+              <!-- <div
+                class="d-flex flex-row justify-content-center align-items-center mt-3"
+              >
+                <span class="number"
+                  >1069 <span class="follow">Followers</span></span
+                >
+              </div> -->
+              <div class="d-flex mt-2">
+                <button class="btn1 btn-dark">Game creator</button>
+              </div>
+              <div class="text mt-3">
+                <span
+                  >Handled hosting games on game server and creating an own game.<br /><br />
+                </span>
+              </div>
+              <div
+                class="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center"
+              >
+                <!-- <span><i class="fa fa-twitter"></i></span> -->
+                <span><i class="fa fa-facebook-f" onclick="location.href='https://www.facebook.com/nghia.chi.1656/'"
+                  type="button"></i></span>
+                <span><i class="fa fa-instagram" onclick="location.href='https://www.instagram.com/iahoiia/'"
+                  type="button" ></i></span>
+                <span><i class="fa fa-linkedin" onclick="location.href='https://www.linkedin.com/in/nghia-nguyen-302493270/'"
+                  type="button"></i></span>
+              </div>
+              <div class="px-2 rounded mt-4 date">
+                <span class="join">KHBC22 of UIT</span>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <div style="height: 100%;padding-right: 350px;"><div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+          <div class="card p-4">
+            <div
+              class="image d-flex flex-column justify-content-center align-items-center"
+            >
+              <button class="btn btn-secondary">
+                <img
+                  src="quang.png"
+                  height="100"
+                  width="100"
+                />
+              </button>
+              <span class="name mt-3">Nguyen Ngoc Quang</span>
+              <span class="idd">MSSV: 22560054</span>
+              <div
+                class="d-flex flex-row justify-content-center align-items-center gap-2"
+              >
+                <span class="idd1">22560054@gm.uit.edu.vn</span>
+                <span><i class="fa fa-copy" onclick="copyNghia('22560054@gm.uit.edu.vn')"></i></span>
+              </div>
+              <!-- <div
+                class="d-flex flex-row justify-content-center align-items-center mt-3"
+              >
+                <span class="number"
+                  >1069 <span class="follow">Followers</span></span
+                >
+              </div> -->
+              <div class="d-flex mt-2">
+                <button class="btn1 btn-dark">Web developer</button>
+              </div>
+              <div class="text mt-3">
+                <span
+                  >Responsible for the setting up of our team server and the developing of the website<br /><br />
+                </span>
+              </div>
+              <div
+                class="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center"
+              >
+                <!-- <span><i class="fa fa-twitter"></i></span> -->
+                <span><i class="fa fa-facebook-f" onclick="location.href='https://www.facebook.com/FateGunXX'"
+                  type="button"></i></span>
+                <span><i class="fa fa-instagram" onclick="location.href='https://www.instagram.com/nnw2507/?fbclid=IwAR1cDrzLSIFg3jy7h9rYV_9cQf6H6xgO5fzurz1JngiaFEQ4t2aWVcdviKU'"
+                  type="button" ></i></span>
+                <span><i class="fa fa-linkedin" onclick="location.href='https://www.linkedin.com/jobs/?fbclid=IwAR2v3qoZ3GxT4AZTXf4LpteZp39aYWcGRTM0Qh2ND7DlxuIuNQspUekvlzo'"
+                  type="button"></i></span>
+              </div>
+              <div class="px-2 rounded mt-4 date">
+                <span class="join">KHBC22 of UIT</span>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        
+
+
+
+      </div>
+
+
+      
+
+
+
+      
+      
+    </header>
+    <script>
+      function copyNghia(mail)
+      {
+        var copyText = document.getElementById("myInput");
+        navigator.clipboard.writeText(mail);
+        
+        // Alert the copied text
+        alert("Copied the text: " + mail);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAME PAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href='./Images/witcher_icon.png' rel='icon' type='image/x-icon' />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      
+        <!-- Navigation Bar-->
+      <div class="container" id = "navbar" style="background-color:white;">
+        <div class="header-left">
+          <a href="/" class="header-logo-a">
+            <img src="Images/witcher_manticore_icon.png" alt="" />
+          </a>
+        </div>
+        <div class="header-right">
+          <ul class="header-right-list">
+            <li>
+              <a href="#game-1" >Game 1</a>
+            </li>
+            <li>
+              <a href="#game-2" >Game 2</a>
+            </li>
+            <li>
+              <a href="#game-4">Game 3</a>
+            </li>
+            <li>
+              <a href="#game-3">Game 4</a>
+            </li>
+          </ul>
+          <div class="header-right-button">
+            <button class="bg-white" onclick="location.href='about.html'" type="button">ABOUT US</button>
+            <button class="bg-black"> 
+              <a href="#main-game" class="bg-black-text">MAIN GAME</a>
+            </button>
+            <!--<button class="bg-black" onclick="window.location.reload();">RESET</button>-->
+          </div>
+        </div>
+      </div>
+      <!-- -->
+      <!-- Content header-->
+      <!---->
+    </header>
+    <body class="body">
+      
+      <!--Content-->
+      <div class="first-content">
+        <div id = "header-first-content" style="color: #FFFFFF;text-shadow: 10px 3px 0 #7A7A7A;color: #FFFFFF;font-size: 100px;">
+            The Last Of Cat
+        </div>
+        <div id = "content-first-content" style="color: #FFFFFF;text-shadow: 2px 3px 0 #7A7A7A;color: #FFFFFF;font-size: 25px;">
+          Cat Hero is Earth's most beloved warrior, having battled through many valiant victories, he is Earth's last hope when an alien race decides to attack Earth. As the courageous Cat Hero, you will have to battle through the enemy and danger to save the Earth.
+        </div>
+        <a href="#game-1"><button id = "button-first-content" href="#game-1">
+          Let's Dance
+       </button></a>
+        
+      </div>
+
+      <!-- Game 1-->
+      <div class="game-1" id="game-1">
+        <div id = "text-game-1" style="color: #FFFFFF;text-shadow: 10px 3px 0 #7A7A7A;color: #FFFFFF;font-size: 70px;"> Flappy Cat </div>
+        <div class="phone">
+          <iframe 
+          id="game-1-iframe" frameborder="0" 
+          src="https://itch.io/embed-upload/8004731?color=333333" 
+          allowfullscreen="" width="385" height="700">
+          <a href="https://nghianguyen.itch.io/flappy-cat%22%3EPlay" flappy cat on itch.io> </a>
+          </iframe>
+        </div>
+        <div id = "text-game-1-content" style="color: #FFFFFF;text-shadow: 2px 3px 0 #7A7A7A;color: #FFFFFF;font-size: 30px;"> 
+          The evil aliens are attacking Earth, Cat Hero must pass obstacles to reach his legendary spaceship to fight back.
+        </div>
+        <div id = "text-game-1-tutorial" style="color: #FFFFFF;text-shadow: 2px 3px 0 #7A7A7A;color: #FFFFFF;font-size:20px ;">
+          Tutorial: left mouse clicks to use the jetpack, try not to touch the ground or the obstacles 
+        </div>
+        <a href="#game-1" id = "button-play-game-1-text">
+          <button id="button-play-game-1" onclick="showGame_hideText('game-1-iframe','button-play-game-1','button-hide-game-1')">
+          Play
+          </button>
+        </a>
+        
+        <button id="button-hide-game-1" onclick="hideGame_showText('game-1-iframe','button-play-game-1','button-hide-game-1');">
+          Hide
+        </button>
+      </div>
+
+
+      <!-- Game 2-->
+      <div class="game-2" id= "game-2">
+        <!-- <iframe id="game-2-iframe"
+          frameborder="1" 
+          src="https://itch.io/embed-upload/7994257?color=333333" 
+          allowfullscreen="" width="900" height="1024">
+          <a href="https://nghianguyen.itch.io/catsteroid-2%22%3EPlay" Catsteroid_2 on itch.io>
+          </a>
+        </iframe> -->
+
+        <iframe id="game-2-iframe"
+          frameborder="0" 
+          src="https://itch.io/embed-upload/8023522?color=333333" 
+          allowfullscreen="" width="900" height="1024">
+          <a href="https://nghianguyen.itch.io/catsteroid-2">
+          </a>
+        </iframe>
+
+
+        <div id = "text-game-2" style="color: #FFFFFF;text-shadow: 10px 3px 0 #7A7A7A;color: #FFFFFF;font-size: 70px ;"> Catsteroid-2</div>
+        <div id = "content-game-2" style="color: #FFFFFF;text-shadow: 2px 3px 0 #7A7A7A;color: #FFFFFF;font-size: 30px;">Knowing that he can’t withstand the enemy attacks, he heads for the enemy mothership in the hope of being able to destroy the enemy headquarters to stop the attack in its tracks.</div>
+        <div id = "tutorial-game-2" style="color: #FFFFFF;text-shadow: 2px 3px 0 #7A7A7A;color: #FFFFFF;font-size: 20px;">Tutorial:  W A S D to move, Spacebar or Left Mouse to Fire, avoid asteroid and enemy fire </div>
+       
+          <button id ="button-play-game-2" onclick="showGame_hideText('game-2-iframe','button-play-game-2','button-hide-game-2')">
+          <a href="#game-2" id = "button-play-game-2-text" >
+            Play
+          </a>
+        </button>
+      
+        
+        <button id="button-hide-game-2" onclick="hideGame_showText('game-2-iframe','button-play-game-2','button-hide-game-2')">
+          Hide
+        </button>
+      </div>
+
+      <!-- Game 3-->
+      <div class="game-4" id = "game-4">
+        <!-- <iframe  id ="game-4-iframe"
+          frameborder="1" 
+          src="https://itch.io/embed-upload/7997306?color=333333" 
+          allowfullscreen="" width="790" height="1024">
+          <a href="https://nghianguyen.itch.io/dungeon-crawler%22%3EPlay" Dungeon crawler on itch.io</a>
+        </iframe> -->
+
+        <iframe  id ="game-4-iframe"
+          frameborder="0" 
+          src="https://itch.io/embed-upload/8023546?color=333333" 
+          allowfullscreen="" width="790" height="1024">
+          <a href="https://nghianguyen.itch.io/dungeon-crawler"></a>
+        </iframe>
+
+
+        <div id = "text-game-4" style="color: #FFFFFF;text-shadow: 10px 3px 0 #7A7A7A;color: #FFFFFF;font-size: 80px;">Space Dungeon</div>
+        <div id = "content-game-4" style="color: #FFFFFF;text-shadow: 2px 3px 0 #7A7A7A;color: #FFFFFF;font-size: 30px;"> After successfully infiltrating the enemy mother ship, Cat Hero has to fight through enemy waves to try and reach the command room to disable the attack.</div>
+        <div id = "tutorial-game-4" style="color: #FFFFFF;text-shadow: 2px 3px 0 #7A7A7A;color: #FFFFFF;font-size: 20px;"> Tutorial: W A S D to Move, Mouse to Aim, Left mouse to Fire. Avoid enemy fire and trap.</div>
+        <a href="#game-4">
+          <button id="button-play-game-4"  
+          onclick="showGame_hideText('game-4-iframe','button-play-game-4','button-hide-game-4')">
+          Play
+          </button>
+        </a>
+        
+        <button id="button-hide-game-4" onclick="hideGame_showText('game-4-iframe','button-play-game-4','button-hide-game-4')">
+          Hide
+        </button>
+      </div>
+
+      <!-- Game 4-->
+      <div class="game-3" id = "game-3">
+        <div id = "text-game-3" style="color: #FFFFFF;text-shadow: 10px 3px 0 #7A7A7A;color: #FFFFFF;font-size: 80px;">Planet Defense</div>
+        <div id = "content-game-3" style="font-size: 30px;"> Unfortunately, our hero was unable to stop the attack in its track, under heavy firepower from the enemy, he ultimately must retreat to Earth to defend Earth to the last breath.</div>
+        <div id = "tutorial-game-3" style="font-size: 20px;"> Tutorial: use the mouse to look around and aim, left click to fire. Defend Earth, don’t let any enemy asteroid touch Earth.</div>
+        <iframe id = "game-3-iframe" src="planet/dist/game-3.html"  
+          allowfullscreen="" width="2000px" height="2000px">
+        </iframe>
+        <a href="#game-3"><button id = "button-play-game-3" onclick="showGame_hideText('game-3-iframe','button-play-game-3','button-hide-game-3')">
+          Play
+        </button></a>
+        
+        <button id="button-hide-game-3" onclick="hideGame_showText('game-3-iframe','button-play-game-3','button-hide-game-3')">
+          Hide
+        </button>
+      </div>
+
+      <!-- Game 5 -->
+      <div class="main-game" id ="main-game">
+        <iframe id ="main-game-iframe" allowfullscreen="" src="./fighting-game-main/index.html" style="width: 1054px;height: 700px;"></iframe>
+        <div id ="text-main-game" style="color: #FFFFFF;text-shadow: 10px 3px 0 #7A7A7A;color: #FFFFFF;font-size: 80px;"> Underconstruction </div>
+        <a href="#main-game-iframe">        
+          <button id = "button-play-main-game" onclick="showGame_hideText('main-game-iframe','button-play-main-game','button-hide-main-game')">
+          Play
+          </button>
+        </a>
+
+        <button id="button-hide-main-game" onclick="hideGame_showText('main-game-iframe','button-play-main-game','button-hide-main-game')">
+          Hide
+        </button>
+      </div>
+
+      <!-- Footer-->
+      <div class="footer" id="footer">
+        <div class = "menu-footer">
+          
+        </div>
+      </div>
+
+    </body>
+    <script> 
+      window.onscroll = function() {myFunction()};
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      if (window.pageYOffset >= sticky) 
+      {
+        navbar.classList.add("sticky");
+      } 
+      else 
+      {   
+        navbar.classList.remove("sticky");
+      }
+
+      function showGame_hideText(game_div, game_button, hideGame_button)
+      {
+
+        document.getElementById(game_div).style.display = "block";
+        document.getElementById(game_button).style.display = "none";
+        document.getElementById(hideGame_button).style.display = "block";
+      } 
+
+      function hideGame_showText(game_div, game_button, hideGame_button)
+      {
+
+        document.getElementById(game_div).style.display = "none";
+        document.getElementById(game_button).style.display = "block";
+        document.getElementById(hideGame_button).style.display = "none";
+      }
+
+      function mutePage() {
+    var elems = document.querySelectorAll("video, audio");
+
+    [].forEach.call(elems, function(elem) { muteMe(elem); });
+}
+mutePage();
+    </script>
+  </body>
+</html>
